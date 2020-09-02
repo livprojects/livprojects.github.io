@@ -1,0 +1,148 @@
+/*Hide menu*/
+
+.is-hidden {
+    display: none; 
+}
+
+/*Body basics*/
+
+
+
+body {
+
+    max-height: 100vh;
+    max-width: 100vh;
+
+}
+
+
+
+.mainportfolioblock {
+
+    width: 100%;
+    height: auto;
+    margin: 1em;
+    overflow: hidden;
+
+}
+/*Let's style those titles*/
+
+h1
+
+{
+	font-size: 4rem;
+	font-family: 'Arbutus Slab', 'Georgia', serif;
+    color:black;
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+	word-wrap:break-word;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+
+/*Main text block styles*/
+
+.textBody {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 110%;
+    margin-top: 2.5rem;
+    width: 100%;
+    height: auto;
+    border: 0.5rem solid yellow;
+    border-radius: 20px;
+    padding: 1rem;
+    line-height: 1.5;
+    
+}
+
+.centeredText {
+    display:block;
+    width: 100%;
+    margin-top: 12rem;
+    text-align: center;
+}
+
+/*Left navigation style*/
+.leftNav {
+    font-family: 'Dosis', sans-serif;
+    font-size: 110%;
+    margin-left: 4rem;
+    width: 8rem;
+    padding: 0.2rem;
+
+}
+.leftNav ul {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.leftNav ul li {
+    width: 100%;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: center
+}
+
+li:hover {
+background-color: yellow;
+border-radius: 20px;
+}
+
+
+
+
+.profilepic {
+    border-radius: 100px;
+    margin: 3rem auto 1.5rem 3.5rem;
+}
+
+/*Display grid setup*/
+
+.mainportfolioblock {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 2rem;
+
+}
+
+h1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+}
+
+.profilepic {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+}
+
+.leftNav {
+    grid-column:1/2;
+    grid-row:3/4;
+
+}
+
+.textBody {
+
+    grid-column:2/3;
+    grid-row:2/5;
+
+    
+}
+
+
+
+
+
+
+
+
+/* Responsive - changer taille du titre h1 */ 
+/* Vérifier support grid */
