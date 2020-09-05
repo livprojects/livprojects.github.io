@@ -21,11 +21,17 @@ body {
 
     width: 100%;
     height: auto;
-    margin: 1em;
     overflow: hidden;
 
 }
 /*Let's style those titles*/
+
+#header {
+    display:block;
+    position:fixed;
+    background-color:white;
+    z-index:99;
+}
 
 h1
 
@@ -35,7 +41,8 @@ h1
     color:black;
     margin-top: 2.5rem;
     margin-left: 3rem;
-	word-wrap:break-word;
+    word-wrap:break-word;
+
 }
 
 .highlight {
